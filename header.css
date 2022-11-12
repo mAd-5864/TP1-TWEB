@@ -1,0 +1,62 @@
+header {
+    height: 64px;
+    background-color: #fff;
+    position: fixed;
+    z-index: 2;
+    width: 100vw;
+    box-shadow: 0 2px 12px;
+    display: flex;
+}
+header img:hover {
+    cursor: pointer;
+}
+.header {
+    display: flex;
+    width: 90vw;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+header .logos {
+    display: flex;
+}
+header .logos img {
+    margin: auto;
+    max-height: 30px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    width: 60vw;
+    margin: auto;
+    white-space: nowrap;
+    justify-content: center;
+}
+nav > a {
+    position: relative;
+    margin-left: 30px;
+    font-weight: 700;
+    font-size: 15px;
+}
+nav > a:hover {
+    font-size: 17px;
+}
+header .icons {
+    display: inline-flex;
+}
+header .icons img {
+    max-height: 18px;
+    margin: auto 6px;
+}
+.hamburger {
+    display: none;
+}
+
+@media (max-width: 1023px) {
+    nav {
+        display: none;
+    }
+    .hamburger {
+        display: block;
+    }
+}

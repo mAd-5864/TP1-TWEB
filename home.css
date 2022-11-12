@@ -1,0 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "InterFace", sans-serif;
+    box-sizing: border-box;
+    font-weight: 300;
+    font-style: normal;
+    text-decoration: none;
+}
+a:hover {
+    cursor: pointer;
+}
