@@ -1,0 +1,29 @@
+/* image gallery slider */
+.slides-container {
+    position: absolute;
+    width: 100vw;
+    height: 600px;
+    margin: auto;
+    margin-top: 64px;
+}
+.slide-in {
+    animation: slide-in 5s ease;
+}
+
+@keyframes slide-in {
+    0% {
+        display: none;
+        transform: translateX(100%);
+    }
+    25% {
+        display: block;
+        transform: translateX(0%);
+    }
+    75% {
+        transform: translateX(0%);
+    }
+    100% {
+        display: none;
+        transform: translateX(-100%);
+    }
+}
