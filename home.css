@@ -6,7 +6,9 @@
     font-family: "InterFace", sans-serif;
     font-weight: 300;
     font-style: normal;
+    color: #000;
     text-decoration: none;
+    list-style-type: none;
 }
 a:hover {
     cursor: pointer;

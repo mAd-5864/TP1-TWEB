@@ -1,47 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Matrizauto | Nº 1 em Carros Usados</title>
-        <link rel="stylesheet" href="home.css" />
-        <link rel="stylesheet" href="header.css" />
-        <link rel="stylesheet" href="main.css" />
-    </head>
-    <body>
-        <header>
-            <div class="header">
-                <div class="logos">
-                    <img src="img/matrizauto_logo.svg" alt="Logo Matrizauto" />
-                    <img src="img/navbar_img1.png" alt="Escolha Consumidor 2022" />
-                    <img src="img/navbar_img2.png" alt="Eleito Produto 2022" />
-                </div>
-                <nav>
-                    <a>Viaturas</a>
-                    <a>Vender o Meu Carro</a>
-                    <a>Notícias</a>
-                    <a>Contactos & Lojas</a>
-                </nav>
-                <div class="icons">
-                    <img src="img/user.png" alt="Profile" />
-                    <img src="img/shopping-cart.png" alt="Cart" />
-                    <img src="img/heart.png" alt="Favorites" />
-                    <img src="img/car.png" alt="Compare" />
-                    <img class="hamburger" src="img/hamburger.png" alt="Menu" />
-                </div>
-            </div>
-        </header>
 
-        <main>
-            <div class="slides-container">
-                <div class="slides"><img src="img/slide1.png" alt="Slide 1" /></div>
-                <div class="slides"><img src="img/slide2.png" alt="Slide 2" /></div>
-                <div class="slides"><img src="img/slide3.png" alt="Slide 3" /></div>
-            </div>
-        </main>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Matrizauto | Nº 1 em Carros Usados</title>
+    <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="footer.css" />
+</head>
 
-        <footer></footer>
-    </body>
-    <script src="slider.js"></script>
+<body>
+    <header>
+        <div class="header">
+            <div class="logos">
+                <img src="img/matrizauto_logo.svg" alt="Logo Matrizauto" />
+                <img src="img/navbar_img1.png" alt="Escolha Consumidor 2022" />
+                <img src="img/navbar_img2.png" alt="Eleito Produto 2022" />
+            </div>
+            <nav>
+                <a>Viaturas</a>
+                <a>Vender o Meu Carro</a>
+                <a>Notícias</a>
+                <a>Contactos & Lojas</a>
+            </nav>
+            <div class="icons">
+                <img src="img/user.png" alt="Profile" />
+                <img src="img/shopping-cart.png" alt="Cart" />
+                <img src="img/heart.png" alt="Favorites" />
+                <img src="img/car.png" alt="Compare" />
+                <img class="hamburger" src="img/hamburger.png" alt="Menu" />
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="slides-container">
+            <div class="slides"><img src="img/slide1.png" alt="Slide 1" /></div>
+            <div class="slides"><img src="img/slide2.png" alt="Slide 2" /></div>
+            <div class="slides"><img src="img/slide3.png" alt="Slide 3" /></div>
+            <div  class="vender">
+                <div class="form-header">Vender</div>
+                <form action="">
+                    <div id="brand"><select name="Marca" id="select-marca"></select></div>
+                    <div id="model"><select name="Modelo" id="select-modelo"></select></div>
+                    <div id="price"><input type="number" placeholder="Preço de Aquisição"></div>
+                    <div id="year"><input type="date" name="" id=""></div>
+                    <div id="mileage"><input type="number"></div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="socials"></div>
+        <div id="footer_list">
+            <ul>
+                <li><a href="#">Recrutamento</a></li>
+                <li><a href="#">Apoio ao Cliente</a></li>
+                <li><a href="#">Ral</a></li>
+                <li><a href="#">Política de Privacidade</a></li>
+                <li><a href="#">Livro de Reclamações Digital</a></li>
+                <li><a href="#">Intermediação Crédito</a></li>
+                <li><a href="#">Cancelar Subscrição de Comunicação</a></li>
+            </ul>
+        </div>
+        <div id="newsletter"></div>
+    </footer>
+</body>
+<script src="slider.js"></script>
+
 </html>
