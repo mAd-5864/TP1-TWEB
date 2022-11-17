@@ -1,0 +1,29 @@
+footer{
+    display: grid;
+    width: 100%;
+    background-color: #f6f6f6;
+    font-size: 16px;
+    font-weight: 100;
+    grid-template-columns: 0.5fr 1.2fr 0.8fr 1.2fr 0.5fr;
+    grid-template-rows: 500px;
+    line-height: 25px;
+}
+#socials{
+    background-color: #0ff;
+    grid-column: 2;
+}
+#footer_list{
+    display: flex;
+    background-color: #fff;
+    grid-column: 3;
+    justify-content: center;
+    background-color: #ff0;
+}
+#footer_list li{
+    width: 180px;
+
+}
+#newsletter{
+    background-color: #f0f;
+    grid-column: 4;
+}
