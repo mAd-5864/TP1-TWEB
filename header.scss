@@ -1,0 +1,100 @@
+$primary-color: #ee1212;
+$text-size: 15px;
+$logo-size: 30px;
+$icon-size: 18px;
+
+
+header {
+    height: 64px;
+    background-color: #fff;
+    position: fixed;
+    z-index: 2;
+    width: 100vw;
+    box-shadow: 0 2px 12px;
+    display: flex;
+  
+    .header {
+      display: flex;
+      margin: 0 auto;
+      width: 1fr;
+      justify-content: space-between;
+    }
+  
+    img:hover {
+      cursor: pointer;
+    }
+  
+    .logos {
+      display: flex;
+  
+      img {
+        margin: auto;
+        max-height: $logo-size;
+      }
+    }
+  
+    .icons {
+      display: inline-flex;
+  
+      img {
+        max-height: $icon-size;
+        margin: auto 6px;
+      }
+    }
+  }
+  
+  nav {
+    display: flex;
+    flex-direction: row;
+    width: 60vw;
+    margin: auto;
+    white-space: nowrap;
+    justify-content: center;
+    object-fit: cover;
+  
+    > a {
+      display: flex;
+      padding: 2px 5px;
+      margin: 0 10px;
+      font-weight: 700;
+      font-size: $text-size;
+      border-radius: 7px;
+  
+      &:hover {
+        animation-name: hover-background;
+        animation-duration: 400ms;
+        color: #fff;
+        background-color: $primary-color;
+      }
+    }
+  }
+  
+  .hamburger {
+    display: none;
+  }
+  
+  @media (max-width: 1023px) {
+    .header {
+      width: 90vw;
+    }
+  
+    nav {
+      display: none;
+    }
+  
+    .hamburger {
+      display: block;
+    }
+  }
+  
+  @keyframes hover-background {
+    from {
+      color: #000;
+      background-color: #fff;
+    }
+  
+    to {
+      color: #fff;
+      background-color: $primary-color;
+    }
+  }

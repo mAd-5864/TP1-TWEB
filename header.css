@@ -1,82 +1,95 @@
 header {
-    height: 64px;
-    background-color: #fff;
-    position: fixed;
-    z-index: 2;
-    width: 100vw;
-    box-shadow: 0 2px 12px;
-    display: flex;
+  height: 64px;
+  background-color: #fff;
+  position: fixed;
+  z-index: 2;
+  width: 100vw;
+  box-shadow: 0 2px 12px;
+  display: flex;
+}
+header .header {
+  display: flex;
+  margin: 0 auto;
+  width: 1fr;
+  justify-content: space-between;
 }
 header img:hover {
-    cursor: pointer;
-}
-.header {
-    display: flex;
-    margin: 0 auto;
-    width: 1fr;
-    justify-content: space-between;
+  cursor: pointer;
 }
 header .logos {
-    display: flex;
+  display: flex;
 }
 header .logos img {
-    margin: auto;
-    max-height: 30px;
+  margin: auto;
+  max-height: 30px;
+}
+header .icons {
+  display: inline-flex;
+}
+header .icons img {
+  max-height: 18px;
+  margin: auto 6px;
 }
 
 nav {
-    display: flex;
-    flex-direction: row;
-    width: 60vw;
-    margin: auto;
-    white-space: nowrap;
-    justify-content: center;
-    object-fit: cover;
+  display: flex;
+  flex-direction: row;
+  width: 60vw;
+  margin: auto;
+  white-space: nowrap;
+  justify-content: center;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 nav > a {
-    display: flex;
-    padding: 2px 5px;
-    margin: 0 10px;
-    font-weight: 700;
-    font-size: 15px;
-    border-radius: 7px;
+  display: flex;
+  padding: 2px 5px;
+  margin: 0 10px;
+  font-weight: 700;
+  font-size: 15px;
+  border-radius: 7px;
+}
+nav > a:hover {
+  -webkit-animation-name: hover-background;
+          animation-name: hover-background;
+  -webkit-animation-duration: 400ms;
+          animation-duration: 400ms;
+  color: #fff;
+  background-color: #ee1212;
 }
 
-nav > a:hover {
-    animation-name: hover-background;
-    animation-duration: 400ms;
-    color: #fff;
-    background-color: #ee1212;
-}
-header .icons {
-    display: inline-flex;
-}
-header .icons img {
-    max-height: 18px;
-    margin: auto 6px;
-}
 .hamburger {
-    display: none;
+  display: none;
 }
 
 @media (max-width: 1023px) {
-    .header {
-        width: 90vw;
-    }
-    nav {
-        display: none;
-    }
-    .hamburger {
-        display: block;
-    }
+  .header {
+    width: 90vw;
+  }
+  nav {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+}
+@-webkit-keyframes hover-background {
+  from {
+    color: #000;
+    background-color: #fff;
+  }
+  to {
+    color: #fff;
+    background-color: #ee1212;
+  }
 }
 @keyframes hover-background {
-    from {
-        color: #000;
-        background-color: #fff;
-    }
-    to {
-        color: #fff;
-        background-color: #ee1212;
-    }
-}
+  from {
+    color: #000;
+    background-color: #fff;
+  }
+  to {
+    color: #fff;
+    background-color: #ee1212;
+  }
+}/*# sourceMappingURL=header.css.map */
