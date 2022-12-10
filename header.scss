@@ -18,6 +18,31 @@ header {
       margin: 0 auto;
       width: 1fr;
       justify-content: space-between;
+      nav {
+        display: flex;
+        flex-direction: row;
+        width: 60vw;
+        margin: auto;
+        white-space: nowrap;
+        justify-content: center;
+        object-fit: cover;
+      
+        > a {
+          display: flex;
+          padding: 2px 5px;
+          margin: 0 10px;
+          font-weight: 700;
+          font-size: $text-size;
+          border-radius: 7px;
+      
+          &:hover {
+            animation-name: hover-background;
+            animation-duration: 400ms;
+            color: #fff;
+            background-color: $primary-color;
+          }
+        }
+      }
     }
   
     img:hover {
@@ -43,31 +68,7 @@ header {
     }
   }
   
-  nav {
-    display: flex;
-    flex-direction: row;
-    width: 60vw;
-    margin: auto;
-    white-space: nowrap;
-    justify-content: center;
-    object-fit: cover;
-  
-    > a {
-      display: flex;
-      padding: 2px 5px;
-      margin: 0 10px;
-      font-weight: 700;
-      font-size: $text-size;
-      border-radius: 7px;
-  
-      &:hover {
-        animation-name: hover-background;
-        animation-duration: 400ms;
-        color: #fff;
-        background-color: $primary-color;
-      }
-    }
-  }
+
   
   .hamburger {
     display: none;
@@ -76,11 +77,12 @@ header {
   @media (max-width: 1023px) {
     .header {
       width: 90vw;
+      
+      nav {
+        display: none;
+      }
     }
   
-    nav {
-      display: none;
-    }
   
     .hamburger {
       display: block;

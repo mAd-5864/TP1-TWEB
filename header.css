@@ -13,6 +13,32 @@ header .header {
   width: 1fr;
   justify-content: space-between;
 }
+header .header nav {
+  display: flex;
+  flex-direction: row;
+  width: 60vw;
+  margin: auto;
+  white-space: nowrap;
+  justify-content: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+header .header nav > a {
+  display: flex;
+  padding: 2px 5px;
+  margin: 0 10px;
+  font-weight: 700;
+  font-size: 15px;
+  border-radius: 7px;
+}
+header .header nav > a:hover {
+  -webkit-animation-name: hover-background;
+          animation-name: hover-background;
+  -webkit-animation-duration: 400ms;
+          animation-duration: 400ms;
+  color: #fff;
+  background-color: #ee1212;
+}
 header img:hover {
   cursor: pointer;
 }
@@ -31,33 +57,6 @@ header .icons img {
   margin: auto 6px;
 }
 
-nav {
-  display: flex;
-  flex-direction: row;
-  width: 60vw;
-  margin: auto;
-  white-space: nowrap;
-  justify-content: center;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-nav > a {
-  display: flex;
-  padding: 2px 5px;
-  margin: 0 10px;
-  font-weight: 700;
-  font-size: 15px;
-  border-radius: 7px;
-}
-nav > a:hover {
-  -webkit-animation-name: hover-background;
-          animation-name: hover-background;
-  -webkit-animation-duration: 400ms;
-          animation-duration: 400ms;
-  color: #fff;
-  background-color: #ee1212;
-}
-
 .hamburger {
   display: none;
 }
@@ -66,7 +65,7 @@ nav > a:hover {
   .header {
     width: 90vw;
   }
-  nav {
+  .header nav {
     display: none;
   }
   .hamburger {
