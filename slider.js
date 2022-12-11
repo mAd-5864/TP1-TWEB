@@ -4,7 +4,7 @@ showSlides();
 function showSlides() {
     let i;
     let slides = document.getElementsByClassName("slides");
-    
+
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
@@ -15,5 +15,5 @@ function showSlides() {
     }
     slides[slideIndex - 1].style.display = "block";
     slides[slideIndex - 1].className += " slide-in";
-    setTimeout(showSlides, 4500);
+    /* setTimeout(showSlides, 4500); */
 }

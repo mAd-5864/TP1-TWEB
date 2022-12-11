@@ -27,25 +27,42 @@
         transform: translateX(-100%);
     }
 }
-.vender{
+.vender {
     position: absolute;
     z-index: 3;
     top: 60px;
     left: 50px;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
     width: 500px;
-    padding: 30px;
+    padding: 50px 0 30px 0;
     background-color: #fff;
     border-radius: 15px;
     box-shadow: 0px 12px 32px rgb(0 0 0 / 10%);
 }
-.form-header{
+.form-header {
     width: 100%;
+    padding: 10px 30px;
+    border-bottom: solid 1px #ee1212;
     border-bottom: solid 1px #bbb;
 }
-.vender div>*{
+.vender div > * {
     padding: 4px;
-    margin: 8px;
+    margin: 8px 30px;
     border-radius: 3px;
+    height: 40px;
+    width: 240px;
+}
+.vender div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.vender div:nth-child(odd) {
+    padding-left: 30px;
+}
+.vender div:nth-child(even) {
+    padding-right: 30px;
 }
