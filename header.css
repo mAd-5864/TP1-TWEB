@@ -62,10 +62,10 @@ header .icons img {
 }
 
 @media (max-width: 1023px) {
-  .header {
+  header .header {
     width: 90vw;
   }
-  .header nav {
+  header .header nav {
     display: none;
   }
   .hamburger {

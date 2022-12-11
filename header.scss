@@ -75,11 +75,12 @@ header {
   }
   
   @media (max-width: 1023px) {
-    .header {
-      width: 90vw;
-      
-      nav {
-        display: none;
+    header{
+      .header {
+        width: 90vw;
+        nav {
+          display: none;
+        }
       }
     }
   
