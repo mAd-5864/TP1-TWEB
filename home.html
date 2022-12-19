@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="home.css" />
         <link rel="stylesheet" href="header.css" />
         <link rel="stylesheet" href="main.css" />
+        <link rel="stylesheet" href="vender-form.css">
         <link rel="stylesheet" href="footer.css" />
     </head>
 
@@ -41,92 +42,18 @@
                 <div class="slides"><img src="img/slide2.png" alt="Slide 2" /></div>
                 <div class="slides"><img src="img/slide3.png" alt="Slide 3" /></div>
                 <form class="vender" action="">
-                    <nav class="form-header">Vender</nav>
-                    <div id="brand">
-                        <select name="Marca" id="select-marca">
-                            <option value="">Marca</option>
-                            <option value="238">ALFA ROMEO</option>
-                            <option value="215">AUDI</option>
-                            <option value="216">BMW</option>
-                            <option value="228">CITROEN</option>
-                            <option value="218">DACIA</option>
-                            <option value="212">FIAT</option>
-                            <option value="231">FORD</option>
-                            <option value="234">HONDA</option>
-                            <option value="220">HYUNDAI</option>
-                            <option value="286">ISUZU</option>
-                            <option value="285">JAGUAR</option>
-                            <option value="235">JEEP</option>
-                            <option value="236">KIA</option>
-                            <option value="282">LEXUS</option>
-                            <option value="225">MAZDA</option>
-                            <option value="224">MERCEDES-BENZ</option>
-                            <option value="227">MINI</option>
-                            <option value="214">NISSAN</option>
-                            <option value="221">OPEL</option>
-                            <option value="230">PEUGEOT</option>
-                            <option value="217">RENAULT</option>
-                            <option value="223">SEAT</option>
-                            <option value="226">SKODA</option>
-                            <option value="229">SMART</option>
-                            <option value="211">TOYOTA</option>
-                            <option value="213">VOLKSWAGEN</option>
-                            <option value="219">VOLVO</option>
-                        </select>
-                    </div>
-                    <div id="model"><select name="Modelo" id="select-modelo"></select></div>
+                    <nav class="form-header"><span>Vender</span></nav>
+                    <div id="brand"><select name="Marca" id="select-marca"></select></div>
+                    <div id="model"><select name="Modelo" id="select-modelo" disabled><option value="">Modelo</option></select></div>
                     <div id="price"><input type="number" placeholder="Preço de Aquisição" /></div>
-                    <div id="year">
-                        <select type="number" name="" id="">
-                            <option value="">Ano</option>
-                            <option value="2022">2022</option>
-                            <option value="2021">2021</option>
-                            <option value="2020">2020</option>
-                            <option value="2019">2019</option>
-                            <option value="2018">2018</option>
-                            <option value="2017">2017</option>
-                            <option value="2016">2016</option>
-                            <option value="2015">2015</option>
-                            <option value="2014">2014</option>
-                            <option value="2013">2013</option>
-                            <option value="2012">2012</option>
-                            <option value="2011">2001</option>
-                            <option value="2010">2010</option>
-                            <option value="2009">2009</option>
-                            <option value="2008">2008</option>
-                            <option value="2007">2007</option>
-                            <option value="2006">2006</option>
-                            <option value="2005">2005</option>
-                            <option value="2004">2004</option>
-                            <option value="2003">2003</option>
-                        </select>
-                    </div>
-                    <div id="mileage">
-                        <select type="number">
-                            <option value="">Quilometragem</option>
-                            <option value="0">0</option>
-                            <option value="5000">5000</option>
-                            <option value="10000">10000</option>
-                            <option value="15000">15000</option>
-                            <option value="20000">20000</option>
-                            <option value="25000">25000</option>
-                            <option value="30000">30000</option>
-                            <option value="35000">35000</option>
-                            <option value="40000">40000</option>
-                            <option value="45000">45000</option>
-                            <option value="50000">50000</option>
-                            <option value="55000">55000</option>
-                            <option value="60000">60000</option>
-                            <option value="65000">65000</option>
-                            <option value="70000">70000</option>
-                            <option value="75000">75000</option>
-                            <option value="80000">80000</option>
-                            <option value="85000">85000</option>
-                            <option value="90000">90000</option>
-                            <option value="95000">95000</option>
-                            <option value="100000">100000</option>
-                        </select>
-                    </div>
+                    <div id="year"><select name="Ano" id="select-ano"></select></div>
+                    <div id="mileage"><select name="Quilometragem" id="select-quilometragem"></select></div>
+                    <div id="transmission"><select name="Transmissão" id="select-transmission">
+                        <option value="0">Transmissão</option>
+                        <option value="1">Manual</option>
+                        <option value="2">Automática</option>
+                    </select></div>
+                    <div class="submit"><input type="submit" value="Procurar"></div>
                 </form>
             </div>
         </main>
@@ -147,4 +74,5 @@
         </footer>
     </body>
     <script src="slider.js"></script>
+    <script src="vender-form.js"></script>
 </html>
