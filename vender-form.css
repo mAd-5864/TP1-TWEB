@@ -55,6 +55,7 @@
   margin-top: 18px;
   display: flex;
   flex-wrap: wrap;
+  width: 48%;
 }
 .vender div:nth-child(even) {
   padding-left: 30px;
@@ -63,10 +64,10 @@
   padding-right: 30px;
 }
 .vender div > * {
+  width: 100%;
   padding: 0 12px;
   border-radius: 3px;
   height: 47px;
-  width: 240px;
   border: 1px solid #cbcbcb;
   color: #333;
 }
