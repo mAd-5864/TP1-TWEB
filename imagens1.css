@@ -1,0 +1,18 @@
+.imagens1 {
+  margin-top: 100px;
+  display: flex;
+}
+
+.imagens1 img {
+  width: 416px;
+  max-width: 416px;
+  height: 300px;
+  border-radius: 16px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  padding: 10px;
+  margin-left: 32px;
+}
