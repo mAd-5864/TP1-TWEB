@@ -2,7 +2,7 @@ header {
   height: 64px;
   background-color: #fff;
   position: fixed;
-  z-index: 2;
+  z-index: 10;
   width: 100vw;
   box-shadow: 0 2px 12px;
   display: flex;
@@ -51,10 +51,6 @@ header .logos img {
 }
 header .icons {
   display: inline-flex;
-}
-header .icons img {
-  max-height: 18px;
-  margin: auto 6px;
 }
 
 .hamburger {
