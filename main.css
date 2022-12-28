@@ -74,22 +74,52 @@
     font-weight: 700;
     text-decoration: underline;
 }
-
-.destaques {
+main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 40px;
+}
+main>*{
     margin-top: 100px;
-    display: flex;
 }
-
+.destaques {
+    display: flex;
+    justify-content: space-between;
+}
 .destaques img {
-    width: 416px;
-    max-width: 416px;
+    width: 32%;
     height: 300px;
-    border-radius: 16px;
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-end;
-    padding: 10px;
-    margin-left: 32px;
+    border-radius: 25px;
+    object-fit: cover;
 }
+.vantagens {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .vantagens .vantagens-header {
+    margin-bottom: 42px;
+  }
+  
+  .vantagens .title {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+  }
+  
+  .vantagens .content {
+    display: flex;
+    justify-content: space-between;
+  }
+  .vantagens .content a {
+    width: 20%;
+  }
+  .vantagens .content a span{
+    display: block;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    width: 100%;
+    margin-top: 15px;
+  }
