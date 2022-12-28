@@ -1,5 +1,4 @@
 footer{
-    position: absolute;
     display: grid;
     width: 100%;
     background-color: #f6f6f6;
@@ -10,6 +9,7 @@ footer{
     line-height: 25px;
     bottom: 0;
     padding:70px 0;
+    margin-top: 100px;
 }
 #socials{
     grid-column: 2;
