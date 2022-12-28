@@ -1,101 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Matrizauto | Nº 1 em Carros Usados</title>
-        <link rel="stylesheet" href="home.css" />
-        <link rel="stylesheet" href="header.css" />
-        <link rel="stylesheet" href="main.css" />
-        <link rel="stylesheet" href="vender-form.css">
-        <link rel="stylesheet" href="footer.css" />
-        <link rel="stylesheet" href="gray_bar.css" />
-        <link rel="stylesheet" href="imagens1.css" />
-        <link rel="stylesheet" href="vantagens.css" />
-    </head>
 
-    <body>
-        <header>
-            <div class="header">
-                <div class="logos">
-                    <img src="img/matrizauto_logo.svg" alt="Logo Matrizauto" />
-                    <img src="img/navbar_img1.png" alt="Escolha Consumidor 2022" />
-                    <img src="img/navbar_img2.png" alt="Eleito Produto 2022" />
-                </div>
-                <nav>
-                    <a>Viaturas</a>
-                    <a>Vender o Meu Carro</a>
-                    <a>Notícias</a>
-                    <a>Contactos & Lojas</a>
-                </nav>
-                <div class="icons">
-                    <img src="img/user.png" alt="Profile" />
-                    <img src="img/shopping-cart.png" alt="Cart" />
-                    <img src="img/heart.png" alt="Favorites" />
-                    <img src="img/car.png" alt="Compare" />
-                    <img class="hamburger" src="img/hamburger.png" alt="Menu" />
-                </div>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Matrizauto | Nº 1 em Carros Usados</title>
+    <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="vender-form.css">
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="gray_bar.css" />
+    <link rel="stylesheet" href="imagens1.css" />
+    <link rel="stylesheet" href="vantagens.css" />
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="logos">
+                <img src="img/matrizauto_logo.svg" alt="Logo Matrizauto" />
+                <img src="img/navbar_img1.png" alt="Escolha Consumidor 2022" />
+                <img src="img/navbar_img2.png" alt="Eleito Produto 2022" />
             </div>
-        </header>
+            <nav>
+                <a>Viaturas</a>
+                <a>Vender o Meu Carro</a>
+                <a>Notícias</a>
+                <a>Contactos & Lojas</a>
+            </nav>
+            <div class="icons">
+                <img src="img/user.png" alt="Profile" />
+                <img src="img/shopping-cart.png" alt="Cart" />
+                <img src="img/heart.png" alt="Favorites" />
+                <img src="img/car.png" alt="Compare" />
+                <img class="hamburger" src="img/hamburger.png" alt="Menu" />
+            </div>
+        </div>
+    </header>
 
-        <main>
-            <div class="slides-container">
-                <div class="slides"><img src="img/slide1.png" alt="Slide 1" /></div>
-                <div class="slides"><img src="img/slide2.png" alt="Slide 2" /></div>
-                <div class="slides"><img src="img/slide3.png" alt="Slide 3" /></div>
-                <form class="vender" action="">
-                    <nav>
-                        <a href="#" class="selected">Comprar</a>
-                        <a href="#">Vender</a>
-                    </nav>
-                    <div id="brand"><select name="Marca" id="select-marca"></select></div>
-                    <div id="model"><select name="Modelo" id="select-modelo" disabled><option value="">Modelo</option></select></div>
-                    <div id="price"><input type="number" placeholder="Preço de Aquisição" /></div>
-                    <div id="year"><select name="Ano" id="select-ano"></select></div>
-                    <div id="mileage"><select name="Quilometragem" id="select-quilometragem"></select></div>
-                    <div id="transmission"><select name="Transmissão" id="select-transmission">
-                        <option value="0">Transmissão</option>
-                        <option value="1">Manual</option>
-                        <option value="2">Automática</option>
-                    </select></div>
-                    <div class="submit"><input type="submit" value="Procurar"></div>
-                </form>
-                <div class="gray_bar">
-                  <span class="text">
-                    <span style="font-weight: bold;">Stock Off!  </span>  OH OH OH Comprar carro é na Matrizauto.   <a href="https://www.matrizauto.pt/pt/stock-off/">Saiba Mais</a>
-                  </span>
+    <main>
+        <div class="slides-container">
+            <div class="slides"><img src="img/slide1.png" alt="Slide 1" /></div>
+            <div class="slides"><img src="img/slide2.png" alt="Slide 2" /></div>
+            <div class="slides"><img src="img/slide3.png" alt="Slide 3" /></div>
+        </div>
+            <form class="vender" action="">
+                <nav>
+                    <a href="#" class="selected">Comprar</a>
+                    <a href="#">Vender</a>
+                </nav>
+                <div id="brand"><select name="Marca" id="select-marca"></select></div>
+                <div id="model"><select name="Modelo" id="select-modelo" disabled>
+                    <option value="">Modelo</option>
+                </select></div>
+                <div id="price"><input type="number" placeholder="Preço de Aquisição" /></div>
+                <div id="year"><select name="Ano" id="select-ano"></select></div>
+                <div id="mileage"><select name="Quilometragem" id="select-quilometragem"></select></div>
+                <div id="transmission"><select name="Transmissão" id="select-transmission">
+                    <option value="0">Transmissão</option>
+                    <option value="1">Manual</option>
+                    <option value="2">Automática</option>
+                </select></div>
+                <div class="submit"><input type="submit" value="Procurar"></div>
+            </form>
+            <div class="gray_bar">
+                <span class="text">
+                    <div class="icons">
+                        <img src="img/price-tag.png" alt="Price tag">
+                    </div>
+                    <span>Stock Off!</span> OH OH OH Comprar carro é na Matrizauto. <a
+                        href="https://www.matrizauto.pt/pt/stock-off/">Saiba Mais</a>
                 </span>
-              </div>
-              <div class="imagens1">
-                <img src="img/stockoff.jpg">
-                <img src="img/stockoff3.png">
+                </span>
+            </div>
+            <div class="destaques">
+                <img src="img/stockoff1.jpg">
                 <img src="img/stockoff2.png">
-              </div>
-              <div class="vantagens">
+                <img src="img/stockoff3.png">
+            </div>
+            <div class="vantagens">
                 <div class="vantagens-header">
-                  <h2 class="title">Vantagens Matrizauto</h2>
+                    <h2 class="title">Vantagens Matrizauto</h2>
                 </div>
                 <a href="https://www.matrizauto.pt/pt/viaturas-selecionadas-e-certificadas/" class="vantagens-imagens">
-                      <img src="img/vantagens1.png"/>
+                    <img src="img/vantagens1.png" />
                     <span class="vantagens-titulo">Certificação 120 Pontos</span>
                 </a>
-                <a href="/pt/devolucao-ou-troca/" class="vantagens-imagens" >
-                      <img src="img/vantagens2.png"/>
+                <a href="/pt/devolucao-ou-troca/" class="vantagens-imagens">
+                    <img src="img/vantagens2.png" />
                     <span class="vantagens-titulo">Satisfação ou Devolução</span>
                 </a>
-                <a href="/pt/garantia-ate-3-anos/" class="vantagens-imagens" >
-                      <img src="img/vantagens3.png"/>
+                <a href="/pt/garantia-ate-3-anos/" class="vantagens-imagens">
+                    <img src="img/vantagens3.png" />
                     <span class="vantagens-titulo">Garantia de até 3 anos</span>
                 </a>
-                <a href="/pt/tudo-num-so-local/" class="vantagens-imagens" >
-                      <img src="img/vantagens4.png"/>
+                <a href="/pt/tudo-num-so-local/" class="vantagens-imagens">
+                    <img src="img/vantagens4.png" />
                     <span class="vantagens-titulo">Tudo num só local</span>
                 </a>
             </div>
-        </main>
-        <img src="img/assistant.png" alt="" id="assistant">
-    </body>
-    <script src="slider.js"></script>
-    <script src="vender-form.js"></script>
+    </main>
+    <img src="img/assistant.png" alt="" id="assistant">
+</body>
+<script src="slider.js"></script>
+<script src="vender-form.js"></script>
+
 </html>
