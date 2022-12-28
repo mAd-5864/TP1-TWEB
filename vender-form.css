@@ -22,24 +22,13 @@
   width: 100%;
 }
 .vender nav a {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 150%;
   color: #757575;
-  height: 100%;
-  display: block;
   padding-bottom: 16px;
 }
 .vender nav a:first-child {
   margin-right: 34px;
 }
 .vender nav a.selected {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 150%;
-  color: #000000;
   position: relative;
 }
 .vender nav a.selected:after {
