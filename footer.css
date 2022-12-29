@@ -56,10 +56,5 @@ footer{
 #newsletter>button{
     height: 40px;
     width: 25%;
-    padding: auto;
-    border: none;
-    background-color: #ee1212;
-    color: #fff;
-    border-radius: 4px;
     font-weight: 50;
 }
