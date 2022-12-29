@@ -15,6 +15,7 @@ header {
     padding: 0 50px;
     .navbar {
       display: flex;
+      justify-content: space-between;
       nav {
         display: flex;
         flex-direction: row;
@@ -69,7 +70,7 @@ header {
   
   @media (max-width: 1023px) {
     header{
-      .header {
+      .navbar {
         width: 90vw;
         nav {
           display: none;
