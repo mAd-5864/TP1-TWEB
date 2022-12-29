@@ -1,29 +1,39 @@
 * {
     margin: 0;
     padding: 0;
-    max-width: 100%;
     box-sizing: border-box;
     font-family: "InterFace", sans-serif;
     font-weight: 300;
     font-style: normal;
+    font-size: 16px;
+    line-height: 150%;
     color: #000;
     text-decoration: none;
     list-style-type: none;
-    line-height: 150%;
 }
-
+img{
+    max-width: 100%;
+}
 a:hover,
 img:hover,
 button:hover,
 input[type=submit] {
     cursor: pointer;
 }
-
 .icons img {
     max-height: 18px;
     margin: auto 6px;
 }
-
+button.red{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: #fff;
+    background: #ee1212;
+    border: none;
+    border-radius: 4px;
+}
 #assistant {
     position: fixed;
     bottom: 30px;
