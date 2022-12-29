@@ -103,13 +103,14 @@ main>* {
 .container>div {
     display: flex;
 }
-.container>div>* {
+.vantagens a {
     width: 25%;
 }
-.container>div>* span {
+.container span {
     display: block;
     font-size: 20px;
     margin-top: 15px;
+    line-height: 150%;
 }
 .matriz_eco{
     position: relative;
@@ -125,5 +126,46 @@ main>* {
     position: absolute;
     bottom: 0;
 }
-
-
+.contacts{
+    justify-content: space-between;
+}
+.contacts div{
+    width: 24%;
+}
+.contacts div>img{
+    width: 100%;
+}
+.contacts span{
+    position: relative;
+    font-size: 16px;
+    margin-bottom: 8px;
+    padding-left: 32px;
+}
+.contacts span:first-of-type{
+    font-weight: 700;
+    padding: 0;
+}
+.contacts a{
+    color: #ee1212;
+    text-decoration: underline #ee1212;
+}
+i.icons{
+    position: absolute;
+    top: 3px;
+    left: 0px;
+}
+.container-bullets{
+    justify-content: center;
+}
+.bullets{
+    margin: 0 5px;
+    width: 7px;
+    height: 7px;
+    border-radius: 7px;
+    background: #d9d9d9;
+    opacity: 1;
+}
+.bullets.active{
+    width: 40px;
+    background: #ee1212;
+}
