@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="gray_bar.css" />
     <link rel="stylesheet" href="imagens1.css" />
     <link rel="stylesheet" href="vantagens.css" />
+    <link rel="stylesheet" href="modal.css">
     <link rel="icon" href="img/tab-icon.png">
 </head>
 
@@ -46,6 +47,24 @@
         <div class="slides"><img src="img/slide2.png" alt="Slide 2" /></div>
         <div class="slides"><img src="img/slide3.png" alt="Slide 3" /></div>
     </div>
+    <div class="modal">
+        <div class="modal-content">
+            <div class="card">
+                <h2>Mau estado</h2>
+                <h2>Preço €</h2>
+            </div>
+            <div class="outer-card">
+                <div class="card">
+                    <h2>Bom estado</h2>
+                    <h2>Preço €</h2>
+                </div>
+            </div>
+            <div class="card">
+                <h2>Muito bom estado</h2>
+                <h2>Preço €</h2>
+            </div>
+        </div>
+      </div>
     <form class="vender" action="">
         <nav>
             <a href="#" class="selected">Comprar</a>
@@ -63,7 +82,7 @@
                 <option value="1">Manual</option>
                 <option value="2">Automática</option>
             </select></div>
-        <div class="submit"><input type="submit" value="Procurar"></div>
+        <div class="submit"><input value="Procurar"></div>
     </form>
     <div class="gray_bar">
         <span class="text">
@@ -193,5 +212,6 @@
 </body>
 <script src="slider.js"></script>
 <script src="vender-form.js"></script>
+<script src="modal.js"></script>
 
 </html>
