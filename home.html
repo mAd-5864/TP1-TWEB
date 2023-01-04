@@ -49,20 +49,31 @@
     </div>
     <div class="modal">
         <div class="modal-content">
-            <div class="card">
-                <h2>Mau estado</h2>
-                <h2>Preço €</h2>
+            <div class="outer-card">
+                <div class="card">
+                    <h1>Mau estado</h1>
+                    <h2>Preço €</h2>
+                    <div class="hidden">Marca: </div>
+                    <div class="hidden">Modelo: </div>
+                    <div class="hidden">Ano: </div>
+                </div>
+                <div class="green-line"></div>
             </div>
             <div class="outer-card">
                 <div class="card">
-                    <h2>Bom estado</h2>
+                    <h1>Bom estado</h1>
                     <h2>Preço €</h2>
                 </div>
+                <div class="green-line"></div>
             </div>
-            <div class="card">
-                <h2>Muito bom estado</h2>
-                <h2>Preço €</h2>
+            <div class="outer-card">
+                <div class="card last-card">
+                    <h1>Muito bom estado</h1>
+                    <h2>Preço €</h2>
+                </div>
+                <div class="green-line"></div>
             </div>
+            <span class="close">&times;</span>
         </div>
       </div>
     <form class="vender" action="">
@@ -83,6 +94,7 @@
                 <option value="2">Automática</option>
             </select></div>
         <div class="submit"><input value="Procurar"></div>
+        <span class="form-required">Preencha o formulário antes de submeter.</span>
     </form>
     <div class="gray_bar">
         <span class="text">
