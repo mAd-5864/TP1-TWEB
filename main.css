@@ -169,7 +169,10 @@ i.icons{
     width: 40px;
     background: #ee1212;
 }
-
+.carros1{
+    flex-direction: column;
+    justify-content: space-between;
+}
 .carros1 .carrostitulos {
     display: flex;
     justify-content: space-between;
@@ -202,7 +205,8 @@ i.icons{
     margin-top: 42px;
     overflow: initial;
     padding-bottom: 50px;
-    display:flex
+    display: flex;
+    justify-content: space-between;
 }
 
 .carros1 h2 {
@@ -238,7 +242,6 @@ i.icons{
     flex-direction: column;
     padding-bottom: 20px;
     white-space: nowrap;
-    margin-right: 32px;
 }
 
 .carros1 .imagem img {

@@ -15,5 +15,4 @@ function showSlides() {
     }
     slides[slideIndex - 1].style.display = "block";
     slides[slideIndex - 1].className += " slide-in";
-    /* setTimeout(showSlides, 4500); */
 }

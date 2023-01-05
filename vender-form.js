@@ -69,11 +69,6 @@ function calculatePrice() {
         modal.style.display = "block";
 
         let c1, c2, c3, precoFinal;
-        if(2023-ano.value <= 10){
-            c1 = 0.05;
-          } else if (2023-ano.value>10) {
-            c1 = 0.04;
-          }
         if (quilometragem.value<=30000) {
             c2 = 1;
         } else if (quilometragem.value<=70000) {
@@ -81,7 +76,13 @@ function calculatePrice() {
         } else {
             c2 = 0.9;
         }
-        precoFinal = preco.value*(1-(2023-ano.value)*c1)*c2
+
+        if(2023-ano.value <= 10){
+            precoFinal = preco.value*(1-(2023-ano.value)*0.05)*c2
+        } else if (2023-ano.value>10) {
+            precoFinal = preco.value*(1-(10*0.05+(2022-ano.value-10)*0.04))*c2
+        }
+        
         if (precoFinal<834) precoFinal=834;
         for (let i = 0; i < 3; i++) {
             switch (i) {
@@ -98,7 +99,7 @@ function calculatePrice() {
                     c3=1
                     break;
             }
-            card[i].innerHTML+=`<h1>${estado}</h1>
+            card[i].innerHTML=`<h1>${estado}</h1>
             <h2>${(precoFinal*c3).toFixed(0)} €</h2>
             <div class="hidden">Marca: ${marca.options[marca.value].text}</div>
             <div class="hidden"><b>Modelo: ${modelo.options[modelo.value].text}</div>
@@ -116,15 +117,9 @@ function calculatePrice() {
 
 btn_close.onclick = function() {
   modal.style.display = "none";
-  for (let i = 0; i < 3; i++) {
-    card[i].innerHTML=""
-  }
 }
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
-    for (let i = 0; i < 3; i++) {
-      card[i].innerHTML=""
-    }
   }
 }
