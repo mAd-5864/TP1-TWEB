@@ -169,3 +169,224 @@ i.icons{
     width: 40px;
     background: #ee1212;
 }
+
+.carros1 .carrostitulos {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.carros1 .carrostitulos .titlecarros {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    color: #000;
+}
+
+.carros1 .carrostitulos a {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    align-items: center;
+    -webkit-text-decoration-line: underline;
+    text-decoration-line: underline;
+    color: #e41819;
+    background-repeat: no-repeat;
+    padding-left: 19px;
+    background-position: left center;
+}
+
+.carros1 .carrosfoto {
+    margin-top: 42px;
+    overflow: initial;
+    padding-bottom: 50px;
+    display:flex
+}
+
+.carros1 h2 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    color: #000000;
+    display: block;
+    width: 100%;
+    margin: 0;
+}
+
+.carros1 h3 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #757575;
+    display: block;
+    width: 100%;
+}
+
+.carros1 .card {
+    height:540px;
+    width: 303px;
+    background: #FFFFFF;
+    border: 1px solid #CBCBCB;
+    border-radius: 6px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding-bottom: 20px;
+    white-space: nowrap;
+    margin-right: 32px;
+}
+
+.carros1 .imagem img {
+    height: 213px;
+    width: 301px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.carros1 .partedebaixo {
+    width: 100%;
+    padding: 21px 23px;
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    font-weight: 300;
+    font-style: normal;
+    margin: 0;
+}
+
+.specs {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -3px;
+    width: 100%;
+    min-height: 58px;
+    flex-direction: row;
+    box-sizing: border-box;
+    font-weight: 300;
+    font-style: normal;
+    font-family: "InterFace", sans-serif;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.specs .spec {
+    background: #F6F6F6;
+    color: #757575;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 1px 8px;
+    gap: 10px;
+    margin: 0 3px;
+    margin-bottom: 6px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    height: 23px;
+}
+
+.tabscarros {
+    margin-top: 13px;
+    width: 100%;
+    flex-direction: row;
+    padding: 0 23px;
+}
+
+.tabscarros .tabstitulos {
+        display: flex;
+        border-bottom: 1px solid #CBCBCB;
+        padding-bottom: 9px;
+        width: 100%;
+        margin-bottom: 11px;
+}
+
+.tabscarros .tabstitulos span {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #757575;
+    position: relative;
+}
+
+.tabscarros .tabstitulos .selected {
+    position: relative;
+}
+
+.tabscarros .tabstitulos .selected::after {
+    height: 4px;
+    background: #E41819;
+    position: absolute;
+    width: 100%;
+    bottom: -9px;
+    left: 0;
+    content: "";
+}
+
+.carros1 .prices {
+    box-sizing: border-box;
+    font-weight: 300;
+    font-style: normal;
+    font-family: "InterFace", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.carros1 .prices .value {
+    width: 100%;
+    display: block;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 150%;
+    color: #E41819;
+}
+
+.carros1 .prices .naosei123 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #757575;
+}
+
+.carros1 .card2 {
+    display: flex;
+    width: calc(100% + 4px);
+    margin-left: -2px;
+    padding-top: 13px;
+    margin-top: auto;
+    flex-wrap: wrap;
+}
+
+.carros1 .card2 .highlight1 {
+    display: flex;
+    align-items: center;
+    padding: 3px 6px 3px 6px;
+    gap: 4px;
+    width: auto;
+    height: 24px;
+    background: #E41819;
+    border-radius: 6px;
+    margin: 3px 2px;
+}
+
+.carros1 .label {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 150%;
+    color: #FFFFFF;
+    white-space: nowrap;
+}
