@@ -193,9 +193,9 @@ i.icons{
     -webkit-text-decoration-line: underline;
     text-decoration-line: underline;
     color: #e41819;
+    background-image: url(https://www.matrizauto.pt/temas/matrizauto2022/imgs/general/seta-carro.svg);
     background-repeat: no-repeat;
     padding-left: 19px;
-    background-position: left center;
 }
 
 .carros1 .carrosfoto {
