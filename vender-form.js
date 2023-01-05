@@ -1,5 +1,5 @@
 const modal = document.querySelector(".modal");
-const btn_close = document.querySelector(".close");
+const btn_close = document.querySelector(".close-modal");
 const marca = document.querySelector("#select-marca")
 const modelo = document.querySelector("#select-modelo")
 const preco = document.querySelector("#price>input")

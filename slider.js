@@ -16,3 +16,13 @@ function showSlides() {
     slides[slideIndex - 1].style.display = "block";
     slides[slideIndex - 1].className += " slide-in";
 }
+const sidebar = document.querySelector(".navbar>nav")
+const hamburger = document.querySelector(".hamburger")
+const sidebar_close = document.querySelector(".close-sidebar")
+
+hamburger.onclick =function () {
+    sidebar.style.display = "flex"
+}
+sidebar_close.onclick = function() {
+    sidebar.style.display = "none";
+  }

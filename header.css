@@ -40,6 +40,9 @@ header .navbar nav > a:hover {
   color: #fff;
   background-color: #ee1212;
 }
+header .navbar nav .close-sidebar {
+  display: none;
+}
 header img:hover {
   cursor: pointer;
 }
@@ -64,6 +67,25 @@ header .icons {
   }
   header .navbar nav {
     display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 300px;
+    background-color: #fff;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 40px;
+    box-shadow: 0 3px 6px #000;
+  }
+  header .navbar nav a {
+    padding: 5px;
+  }
+  header .navbar nav .close-sidebar {
+    display: block;
+    right: 30px;
+    top: 36px;
   }
   .hamburger {
     display: block;

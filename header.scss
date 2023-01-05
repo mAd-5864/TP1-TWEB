@@ -41,6 +41,9 @@ header {
             background-color: $primary-color;
           }
         }
+        .close-sidebar{
+          display: none;
+        }
       }
     }
   
@@ -74,6 +77,25 @@ header {
         width: 90vw;
         nav {
           display: none;
+          position: fixed;
+          top: 0;
+          right: 0;
+          height: 100%;
+          width: 300px;
+          background-color: #fff;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: flex-start;
+          padding-top: 40px;
+          box-shadow: 0 3px 6px #000;
+          a{
+            padding: 5px;
+          }
+          .close-sidebar{
+            display: block;
+            right: 30px;
+            top: 36px;
+          }
         }
       }
     }

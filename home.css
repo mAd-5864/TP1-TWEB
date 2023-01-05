@@ -13,6 +13,7 @@
 }
 img{
     max-width: 100%;
+    background-position: left;
 }
 a:hover,
 img:hover,
