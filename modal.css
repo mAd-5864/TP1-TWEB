@@ -78,7 +78,8 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin: 15px;
+    margin: 0.5em;
+    height: 8%;
   }
 .card:hover + .green-line{
   position: absolute;

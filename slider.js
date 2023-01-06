@@ -3,7 +3,6 @@ const slides = document.querySelectorAll (".slides")
 var i = 0;
 
 function showSlides() {
-    let slides = document.getElementsByClassName("slides");
     slides[i].classList.remove("active")
     if( i == 2) {
         i = -1

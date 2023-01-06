@@ -5,6 +5,7 @@ const modelo = document.querySelector("#select-modelo")
 const preco = document.querySelector("#price>input")
 const quilometragem = document.querySelector("#select-quilometragem")
 const ano = document.querySelector("#select-ano")
+const transmissao = document.querySelector("#select-transmissao")
 const required_alert = document.querySelector(".form-required")
 const submit = document.querySelector(".submit")
 let card = document.querySelectorAll(".card")
@@ -36,17 +37,20 @@ const modeloDB = ['',["GIULIA","GIULIETTA","MITO","MORREU","STELVIO"],
 ["CADDY","GOLF","PASSAT","POLO","SHARAN","TIGUAN","TOURAN","UP"],
 ["V40","V40 CROSS COUNTRY","V60","V90","XC40","XC60","XC90"]]
 
-marca.innerHTML=`<option value="0">Marca</option>`
-for (let i = 1; i < marcaDB.length; i++) {
-    marca.innerHTML+=`<option value="${i}">${marcaDB[i]}</option>`;
-}
-ano.innerHTML=`<option value="0">Ano</option>`
-for (let i = 2022; i > 1999; i--) {
-    ano.innerHTML+=`<option value="${i}">${i}</option>`;
-}
-quilometragem.innerHTML=`<option value="-1">Quilometragem</option>`
-for (let i = 1; i < 21; i++) {
-    quilometragem.innerHTML+=`<option value="${i*5000}">${i*5000}</option>`;
+fillSelects()
+function fillSelects() {
+    marca.innerHTML=`<option value="0">Marca</option>`
+    for (let i = 1; i < marcaDB.length; i++) {
+        marca.innerHTML+=`<option value="${i}">${marcaDB[i]}</option>`;
+    }
+    ano.innerHTML=`<option value="0">Ano</option>`
+    for (let i = 2022; i > 1999; i--) {
+        ano.innerHTML+=`<option value="${i}">${i}</option>`;
+    }
+    quilometragem.innerHTML=`<option value="-1">Quilometragem</option>`
+    for (let i = 1; i < 21; i++) {
+        quilometragem.innerHTML+=`<option value="${i*5000}">${i*5000}</option>`;
+    }
 }
 function getModelo() {
     console.log(marca.options[marca.value].text + " = " + marca.value)
@@ -64,11 +68,11 @@ marca.addEventListener("change", getModelo);
 
 submit.onclick =calculatePrice
 function calculatePrice() {
-    if (marca.value!=0 && modelo.value!=0 && preco.value>0 &&ano.value!=0 && quilometragem.value!=0) {
+    if (marca.value!=0 && modelo.value!=0 && preco.value>0 &&ano.value!=0 && quilometragem.value!=0 && transmissao.value!=0) {
         console.log("Marca: "+marca.value +" Modelo: "+ modelo.value +" Preço: "+ preco.value +" Ano: "+ ano.value +" KM: "+ quilometragem.value)
         modal.style.display = "block";
 
-        let c1, c2, c3, precoFinal;
+        let c2, c3, precoFinal;
         if (quilometragem.value<=30000) {
             c2 = 1;
         } else if (quilometragem.value<=70000) {
@@ -102,8 +106,9 @@ function calculatePrice() {
             card[i].innerHTML=`<h1>${estado}</h1>
             <h2>${(precoFinal*c3).toFixed(0)} €</h2>
             <div class="hidden">Marca: ${marca.options[marca.value].text}</div>
-            <div class="hidden"><b>Modelo: ${modelo.options[modelo.value].text}</div>
+            <div class="hidden">Modelo: ${modelo.options[modelo.value].text}</div>
             <div class="hidden">Ano: ${ano.value}</div>
+            <div class="hidden">Transmissão: ${transmissao.options[transmissao.value].text}</div>
             <div class="hidden">${quilometragem.value}Km</div>`
         }
     } else {
