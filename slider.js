@@ -1,21 +1,18 @@
-let slideIndex = 0;
-showSlides();
+//slider imagens
+const slides = document.querySelectorAll (".slides")
+var i = 0;
 
 function showSlides() {
-    let i;
     let slides = document.getElementsByClassName("slides");
-
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
+    slides[i].classList.remove("active")
+    if( i == 2) {
+        i = -1
     }
-    slideIndex++;
-    if (slideIndex > slides.length) { slideIndex = 1 }
-    for (i = 0; i < slides.length; i++) {
-        slides[i].className = slides[i].className.replace(" slide-in", "");
-    }
-    slides[slideIndex - 1].style.display = "block";
-    slides[slideIndex - 1].className += " slide-in";
+    slides[++i].classList.add("active")
 }
+setInterval(showSlides, 4000); 
+
+//abrir sidebar
 const sidebar = document.querySelector(".navbar>nav")
 const hamburger = document.querySelector(".hamburger")
 const sidebar_close = document.querySelector(".close-sidebar")
